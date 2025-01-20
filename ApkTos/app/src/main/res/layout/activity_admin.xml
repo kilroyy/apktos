@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/namaini"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:textColor="@color/goldenkuning"
+            android:text="NAMA"
+            android:textSize="22dp"/>
+
+        <ImageButton
+            android:id="@+id/logutadmin"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/kluar" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="0dp"
+        android:layout_gravity="center"
+        android:background="@drawable/logoklmpk"/>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/logoapk"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/nmapk"/>
+
+    <Button
+        android:id="@+id/tomeve"
+        android:text="KEGIATAN EVENT"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:textColor="@color/navy"
+        android:background="@drawable/cusbut"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/tomlpj"
+        android:text="LAPORAN PENANGGUNG JAWABAN"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:textColor="@color/navy"
+        android:background="@drawable/cusbut"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/tomsar"
+        android:text="SARAN DAN MASUKAN"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:textColor="@color/navy"
+        android:background="@drawable/cusbut"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/tomakun"
+        android:text="KONFIGURASI AKUN"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:textColor="@color/navy"
+        android:background="@drawable/cusbut"
+        android:textSize="17dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+</LinearLayout>

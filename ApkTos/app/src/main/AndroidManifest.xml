@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logoapk"
+        android:label="TOS"
+        android:roundIcon="@drawable/logoapk"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.TOS"
+        tools:targetApi="31">
+        <activity
+            android:name=".Adapter.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TambahAkun"
+            android:exported="false" />
+        <activity
+            android:name=".TampilAkun"
+            android:exported="false" />
+        <activity
+            android:name=".TambahSaran"
+            android:exported="false" />
+        <activity
+            android:name=".EditLpj"
+            android:exported="false" />
+        <activity
+            android:name=".DetailLpj"
+            android:exported="false" />
+        <activity
+            android:name=".TampilanLpj"
+            android:exported="false" />
+        <activity
+            android:name=".TambahLpj"
+            android:exported="false" />
+        <activity
+            android:name=".EditEvent"
+            android:exported="false" />
+        <activity
+            android:name=".TambahEvent"
+            android:exported="false" />
+        <activity
+            android:name=".DetailEvent"
+            android:exported="false" />
+        <activity
+            android:name=".TampilanEvent"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".TampilanSaran"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false"/>
+    </application>
+
+</manifest>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TambahLpj">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@color/kuningmuda"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:text="NAMA KEGIATAN:"
+                    android:textSize="20dp"
+                    android:padding="5dp"/>
+                <!-- Input Nama Kegiatan -->
+                <EditText
+                    android:id="@+id/etNamaKegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/editcard"
+                    android:inputType="text" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:text="TANGGAL KEGIATAN:"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"/>
+                <!-- Input Tanggal -->
+                <EditText
+                    android:id="@+id/etTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/editcard"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:text="PEMASUKAN:"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"/>
+                <!-- Input Pemasukan -->
+                <EditText
+                    android:id="@+id/etPemasukan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/editcard"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:text="PENGELUARAN:"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"/>
+                <!-- Input Pengeluaran -->
+                <EditText
+                    android:id="@+id/etPengeluaran"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:padding="5dp"
+                    android:textSize="20dp"
+                    android:background="@drawable/editcard"
+                    android:inputType="numberDecimal" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:text="KETERANGAN:"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"/>
+                <!-- Input Keterangan -->
+                <EditText
+                    android:id="@+id/etKeterangan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:padding="5dp"
+                    android:background="@drawable/editcard"
+                    android:inputType="textMultiLine" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:text="DOKUMENTASI:"
+                    android:textSize="20dp"
+                    android:layout_marginTop="20dp"
+                    android:padding="5dp"/>
+                <!-- Layout Preview Gambar -->
+                <LinearLayout
+                    android:id="@+id/layoutPreviewGambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="16dp" />
+
+                <!-- Tombol Pilih Gambar -->
+                <Button
+                    android:id="@+id/btnPilihGambar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pilih Gambar"
+                    android:background="@drawable/cusbut" />
+
+                <!-- Tombol Tambah Laporan -->
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/btnTambahLaporan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:background="@drawable/cusbut"
+        android:textColor="@color/navy"
+        android:layout_gravity="center"/>
+</LinearLayout>

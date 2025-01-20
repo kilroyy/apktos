@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1020014488641",
+    "firebase_url": "https://apktos-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "apktos",
+    "storage_bucket": "apktos.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1020014488641:android:0f42539cd9f54347d9aac0",
+        "android_client_info": {
+          "package_name": "com.example.apktos"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeW9llkeiFwPBjXcr8WPPjpBdaqflNgIM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

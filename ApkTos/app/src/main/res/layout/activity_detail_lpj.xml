@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailLpj">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="600dp"
+                android:layout_margin="5dp"
+                app:cardBackgroundColor="@color/kuningmuda"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="4dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KEGIATAN:"
+                        android:textColor="@color/navy"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvDetailNamaKegiatan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Nama Kegiatan"
+                        android:textSize="17sp"
+                        android:textColor="@color/navy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TANGGAL KEGIATAN:"
+                        android:textColor="@color/navy"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/tvDetailTanggal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Tanggal"
+                        android:textSize="17sp"
+                        android:textColor="@color/navy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PEMASUKAN:"
+                        android:textColor="@color/navy"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:textColor="@color/navy"
+                        android:id="@+id/tvDetailPemasukan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:text="Pemasukan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="PENGELUARAN:"
+                        android:textColor="@color/navy"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:textColor="@color/navy"
+                        android:id="@+id/tvDetailPengeluaran"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17sp"
+                        android:text="Pengeluaran" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SISA SALDO:"
+                        android:textColor="@color/navy"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:textColor="@color/navy"
+                        android:id="@+id/tvDetailSisaUang"
+                        android:layout_width="match_parent"
+                        android:textSize="17sp"
+                        android:layout_height="wrap_content"
+                        android:text="Sisa Uang" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KETERANGAN:"
+                        android:textColor="@color/navy"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:textColor="@color/navy"
+                        android:id="@+id/tvDetailKeterangan"
+                        android:layout_width="match_parent"
+                        android:textSize="17sp"
+                        android:layout_height="wrap_content"
+                        android:text="Keterangan" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DOKUMENTASI:"
+                        android:textColor="@color/navy"
+                        android:textSize="20dp"
+                        android:layout_marginTop="20dp"
+                        android:textStyle="bold" />
+                    <!-- RecyclerView untuk Gambar -->
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerViewGambar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="20dp"
+                android:padding="20dp">
+
+                <Button
+                    android:id="@+id/buteditlpj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:background="@drawable/cusbut"
+                    android:text="EDIT"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/buthpslpj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/marun"
+                    android:background="@drawable/cusbut"
+                    android:text="HAPUS"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+
+                <Button
+                    android:id="@+id/butpdflpj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:background="@drawable/cusbut"
+                    android:text="CETAK PDF"
+                    android:textStyle="bold"
+                    android:layout_margin="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

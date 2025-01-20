@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".EditEvent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_margin="15dp"
+        app:cardBackgroundColor="@color/kuningmuda"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:text="NAMA KEGIATAN:"
+                    android:textSize="20dp"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/editlpr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:textColor="@color/navy"
+                    android:textSize="20dp"
+                    android:text="-"
+                    android:background="@drawable/editcard"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:text="DESKRIPSI KEGIATAN:"
+                    android:textSize="20dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/editdesk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/editcard"
+                    android:textColor="@color/navy"
+                    android:textSize="20dp"
+                    android:text="-"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:text="TANGGAL KEGIATAN:"
+                    android:textSize="20dp"
+                    android:layout_marginTop="30dp"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/edittnggl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/editcard"
+                    android:textColor="@color/navy"
+                    android:textSize="20dp"
+                    android:text="-"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    android:text="ESTIMASI BIAYA:"
+                    android:textSize="20dp"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/edituang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/editcard"
+                    android:textColor="@color/navy"
+                    android:textSize="20dp"
+                    android:text="-"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/navy"
+                    android:textStyle="bold"
+                    android:layout_marginTop="30dp"
+                    android:text="PENANGGUNG JAWAB:"
+                    android:textSize="20dp"
+                    android:padding="5dp"/>
+
+                <EditText
+                    android:id="@+id/editnmjawab"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:background="@drawable/editcard"
+                    android:textColor="@color/navy"
+                    android:textSize="20dp"
+                    android:text="-"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/edibtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUBMIT"
+        android:textSize="25dp"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/navy"
+        android:background="@drawable/cusbut"
+        android:layout_gravity="center"/>
+</LinearLayout>
